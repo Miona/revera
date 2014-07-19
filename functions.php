@@ -78,8 +78,80 @@ add_action( 'after_setup_theme', 'revera_setup' );
  */
 function revera_widgets_init() {
 	register_sidebar( array(
-		'name'          => __( 'Sidebar', 'revera' ),
-		'id'            => 'sidebar-1',
+		'name'          => __( 'Sidebar-1', 'revera' ),
+		'id'            => 'home-sidebar-1',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
+        register_sidebar( array(
+		'name'          => __( 'Sidebar-2', 'revera' ),
+		'id'            => 'home-sidebar-2',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
+         register_sidebar( array(
+		'name'          => __( 'Sidebar-3', 'revera' ),
+		'id'            => 'home-sidebar-3',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
+          register_sidebar( array(
+		'name'          => __( 'Sidebar-4', 'revera' ),
+		'id'            => 'home-sidebar-4',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
+           register_sidebar( array(
+		'name'          => __( 'Sidebar-5', 'revera' ),
+		'id'            => 'home-sidebar-5',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
+            register_sidebar( array(
+		'name'          => __( 'Sidebar-6', 'revera' ),
+		'id'            => 'home-sidebar-6',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
+            register_sidebar( array(
+		'name'          => __( 'Sidebar-7', 'revera' ),
+		'id'            => 'home-sidebar-7',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
+             register_sidebar( array(
+		'name'          => __( 'Sidebar-8', 'revera' ),
+		'id'            => 'home-sidebar-8',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
+              register_sidebar( array(
+		'name'          => __( 'Sidebar-9', 'revera' ),
+		'id'            => 'home-sidebar-9',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
+               register_sidebar( array(
+		'name'          => __( 'Sidebar-10', 'revera' ),
+		'id'            => 'home-sidebar-10',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h3 class="widget-title">',
@@ -92,15 +164,24 @@ add_action( 'widgets_init', 'revera_widgets_init' );
  * Enqueue scripts and styles
  */
 function revera_scripts() {
-
-	// load bootstrap css
-	wp_enqueue_style( 'revera-bootstrap', get_template_directory_uri() . '/includes/resources/bootstrap/css/bootstrap.css' );
+           
+	 wp_enqueue_style('load bootstrap css9ootstrap', get_template_directory_uri() . '/includes/resources/bootstrap/css/bootstrap.css' );
 
 	// load Revera styles
 	wp_enqueue_style( 'revera-style', get_stylesheet_uri() );
-
+         wp_enqueue_style( 'flex-style', get_template_directory_uri() .'/flex.css' );
+        
+        
+       
+        
+        wp_enqueue_script('jquery');
+        
+       wp_enqueue_script('flex-js', get_template_directory_uri().'/flex.js' );
+       
+        wp_enqueue_script('flex-jquery', get_template_directory_uri() .'/jquery.flexslider.min.js'  );
 	// load bootstrap js
 	wp_enqueue_script('revera-bootstrapjs', get_template_directory_uri().'/includes/resources/bootstrap/js/bootstrap.js', array('jquery') );
+        
 
 	// load bootstrap wp js
 	wp_enqueue_script( 'revera-bootstrapwp', get_template_directory_uri() . '/includes/js/bootstrap-wp.js', array('jquery') );
