@@ -40,7 +40,7 @@
                                 
 			</div>
 		</div>
-	</div><!-- .container -->
+	<!-- .container -->
 
 
 <nav class="site-navigation">

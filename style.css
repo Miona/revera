@@ -83,8 +83,21 @@ img[class*="wp-image-"] {
 .slider{
    
    margin-left:5px;
-    background: url('http://cdn.demo.fabthemes.com/revera/wp-content/themes/Revera/images/overlay.png');
-    
+}
+
+.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+margin-right: -15px;
+background-color: #ed564b;
+height: 60px;
+width: 60px;
+padding: 10px;
+}
+.carousel-control .glyphicon-chevron-left, .carousel-control .icon-next {
+margin-right: -15px;
+background-color: #ed564b;
+height: 60px;
+width: 60px;
+padding: 10px;
 }
 .section-title {
 text-transform: uppercase;
@@ -92,7 +105,7 @@ padding-bottom: 20px;
 }
 
 .section-title h2 {
-font-size: 24px;
+font-size: 16px;
 color: #000;
 font-weight: bold;
 margin-bottom: 5px;
@@ -106,8 +119,13 @@ padding-bottom: 20px;
 }
 
 postbox h3 a:link {
-color: #000 !important;
+color: #000;
 text-decoration:none;
+
+}
+a{
+    color:#000;
+    text-decoration:none;
 }
 .hometa {
 font-size: 12px;
@@ -115,6 +133,9 @@ text-transform: uppercase;
 margin-bottom: 20px;
 font-weight: bold;
 }
+/*a:visited {
+color: #f4473a;
+}*/
 .site-navigation-inner {
     float:right;
 }
@@ -162,6 +183,12 @@ text-align: center;
 margin: 0px auto;
 font-size: 20px;
 }
+/*header*/
+h1.site-title a:link, h1.site-title a:visited {
+color: #000;
+text-decoration:none;
+text-transform:uppercase;
+}
 .widget{
     width:100%;
     
@@ -173,6 +200,7 @@ margin: 15px 0px;
 height: 60px;
 border-bottom: none;
 float: left;
+
 }
 #submenu ul {
 width: auto;
@@ -190,8 +218,33 @@ padding: 10px;
 color: #fff;
 font-weight: 400;
 
-}
 
+}
+#submenu li a {
+color: #777;
+display: block;
+margin: 0;
+padding: 19px 10px 19px 10px;
+text-decoration: none;
+position: relative;
+}
+#submenu .current_page_item a {
+color: #ed564b;
+} 
+#submenu li a.sf-with-ul {
+padding-right: 10px;
+}
+#submenu li ul {
+font-size: 12px;
+z-index: 9999;
+position: absolute;
+left: -999em;
+height: auto;
+width: 160px;
+margin: 0px 0px 0px 0px;
+padding: 5px 5px;
+background: #fff;
+}
 /* WP Gallery */
 .gallery {
 	margin-bottom: 1.5em;

@@ -18,7 +18,7 @@ get_header(); ?>
     <div class="carousel-inner">
         <div class="item active">
            
-<img src="http://31.media.tumblr.com/1d38289e9d0fface49c0381ae4cc7c99/tumblr_n3ktxaKh9h1s4wbdoo1_500.gif" style="width:100%;height:400px"/>
+<img src="http://center.kokenaddons.com/storage/cache/images/000/059/test,large.jpg?1381439836" style="width:100%;height:450px"/>
             <div class="carousel-caption">
               <h2>Suspendisse ornare, felis feugiat suscipit pharetra</h2>
               <p>Quisque sit amet sagittis justo. Suspendisse ornare, felis feugiat suscipit pharetra, lorem est viverra odio; tristique tristique diam tellus id tellus. In consectetur aliquet tristique. Curabitur imperdiet leo in nisl consectetur mattis. Quisque bibendum, mauris vitae suscipit ornare; est nibh elementum mauris, eu malesuada nunc magna at justo. Proin blandit id tellus non pellentesque. Mauris […]</p>
@@ -27,7 +27,7 @@ get_header(); ?>
         </div>
         <div class="item">
           
-<img src="http://37.media.tumblr.com/tumblr_lwnhifWg9Z1qh81keo1_500.jpg" style="width:100%;height:400px" >
+            <img src="http://www.etomicmail.com/wp-content/uploads/2013/12/unsplash_5245fd13bfb64_11.jpg" style="width:100%;height:450px"/>
             <div class="carousel-caption">
               <h3>Second slide label</h3>
               <p>Aliquam sit amet gravida nibh, facilisis gravida…</p>
@@ -35,7 +35,7 @@ get_header(); ?>
         </div>
         <div class="item">
           
-     <img src="http://s3.amazonaws.com/data.tumblr.com/tumblr_lbxn1oPIzG1qa1ihvo1_r1_1280.jpg?AWSAccessKeyId=AKIAI6WLSGT7Y3ET7ADQ&Expires=1405786206&Signature=Qnl6XJ6JNT3XrKh65iS1hexSVLE%3D#" style="width:100%;height:400px"/>
+     <img src="http://shirleyenebrad.com/wp-content/uploads/2014/04/black-and-white-mountain-900x440.png" style="width:100%;height:450px"/>
             <div class="carousel-caption">
               <h3>Third slide label</h3>
               <p>Praesent commodo cursus magna vel…</p>
