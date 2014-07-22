@@ -83,8 +83,12 @@ img[class*="wp-image-"] {
 .slider{
    
    margin-left:5px;
+   background: url('http://cdn.demo.fabthemes.com/revera/wp-content/themes/Revera/images/overlay.png');
 }
-
+.slider img{
+    width:100%;
+    height:400px;
+}
 .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
 margin-right: -15px;
 background-color: #ed564b;
@@ -202,48 +206,94 @@ border-bottom: none;
 float: left;
 
 }
-#submenu ul {
-width: auto;
-float: left;
-list-style: none;
-margin: 0;
-padding: 0 0px;
+.navbar-nav{
+    color:#aaa;
 }
-
-#submenu li {
-float: left;
-list-style: none;
-margin: 0;
-padding: 10px;
+.featured-post-content h3{
+    font-size:20px;
+    text-decoration:none !important;
+    
+}
+.home-featured-post-title h3 a:visited{
+    color:#000;
+}
+small{
+    color:#ed564b;
+}
+/* footer widget */
+.bottom{
+    padding: 20px 0px 40px 0px;
+    background: #3b3b3b;
+    border-top: 5px solid #ed564b;
+}
+.head {
+background: #ed564b;
+padding: 10px 0px;
 color: #fff;
-font-weight: 400;
-
+border-top: 5px solid #f96b61;
+border-bottom: 5px solid #f96b61;
+margin-bottom:20px;
 
 }
-#submenu li a {
-color: #777;
-display: block;
+
+
+.head h3 {
+font-size: 24px;
+text-transform: uppercase;
+font-weight: bold;
+ margin-left:60px;
+}
+
+h1 .entry-title {
+margin-top: 10px;
+margin-bottom: 20px;
+font-weight: bold;
+font-size: 36px;
+color: #000;
+text-decoration:none;
+}
+.foot{
+    color: #aaa;
+}
+.foot h3 {
+font-size: 16px;
+margin-bottom: 10px;
+padding: 10px 0px;
+color: #fff;
+text-transform: uppercase;
+}
+.foot p {
+padding: 5px 0px;
 margin: 0;
-padding: 19px 10px 19px 10px;
+line-height: 150%;
+}
+.bottom ul {
+margin: 0px 0px;
+padding: 0px;
+}
+
+.foot ul {
+list-style-type: none;}
+
+ 
+.foot ul li a:link, .foot ul li a:visited {
+
 text-decoration: none;
-position: relative;
+padding: 7px 0px 7px 0px;
+display: block;
 }
-#submenu .current_page_item a {
-color: #ed564b;
-} 
-#submenu li a.sf-with-ul {
-padding-right: 10px;
+.foot ul li {
+height: 100%;
+line-height: 18px;
+clear: left;
+list-style-type: none;
+color: #aaa;
 }
-#submenu li ul {
-font-size: 12px;
-z-index: 9999;
-position: absolute;
-left: -999em;
-height: auto;
-width: 160px;
-margin: 0px 0px 0px 0px;
-padding: 5px 5px;
-background: #fff;
+.foot li {
+list-style-type: none;
+margin: 0;
+padding: 0px 0px;
+border-bottom: 1px dotted rgba(255,255,255,.2);
 }
 /* WP Gallery */
 .gallery {
@@ -371,3 +421,6 @@ object {
 */
 
 /* Hey, if you don't need my comments anymore, just delete me! :)  */
+.foot{
+    
+}

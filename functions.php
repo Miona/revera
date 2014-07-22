@@ -87,7 +87,7 @@ function revera_widgets_init() {
 	) );
         register_sidebar( array(
 		'name'          => __( 'Sidebar-2', 'revera' ),
-		'id'            => 'home-sidebar-2',
+		'id'            => 'home-footer-2',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h3 class="widget-title">',
@@ -95,7 +95,7 @@ function revera_widgets_init() {
 	) );
          register_sidebar( array(
 		'name'          => __( 'Sidebar-3', 'revera' ),
-		'id'            => 'home-sidebar-3',
+		'id'            => 'home-footer-3',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h3 class="widget-title">',
@@ -103,7 +103,7 @@ function revera_widgets_init() {
 	) );
           register_sidebar( array(
 		'name'          => __( 'Sidebar-4', 'revera' ),
-		'id'            => 'home-sidebar-4',
+		'id'            => 'home-footer-4',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h3 class="widget-title">',
@@ -111,52 +111,13 @@ function revera_widgets_init() {
 	) );
            register_sidebar( array(
 		'name'          => __( 'Sidebar-5', 'revera' ),
-		'id'            => 'home-sidebar-5',
+		'id'            => 'home-footer-5',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	) );
-            register_sidebar( array(
-		'name'          => __( 'Sidebar-6', 'revera' ),
-		'id'            => 'home-sidebar-6',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h3 class="widget-title">',
-		'after_title'   => '</h3>',
-	) );
-            register_sidebar( array(
-		'name'          => __( 'Sidebar-7', 'revera' ),
-		'id'            => 'home-sidebar-7',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h3 class="widget-title">',
-		'after_title'   => '</h3>',
-	) );
-             register_sidebar( array(
-		'name'          => __( 'Sidebar-8', 'revera' ),
-		'id'            => 'home-sidebar-8',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h3 class="widget-title">',
-		'after_title'   => '</h3>',
-	) );
-              register_sidebar( array(
-		'name'          => __( 'Sidebar-9', 'revera' ),
-		'id'            => 'home-sidebar-9',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h3 class="widget-title">',
-		'after_title'   => '</h3>',
-	) );
-               register_sidebar( array(
-		'name'          => __( 'Sidebar-10', 'revera' ),
-		'id'            => 'home-sidebar-10',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h3 class="widget-title">',
-		'after_title'   => '</h3>',
-	) );
+            
 }
 add_action( 'widgets_init', 'revera_widgets_init' );
 

@@ -11,7 +11,14 @@
  */
 
 get_header(); ?>
-
+      
+      <div class=" head"> 
+          
+          <div class="container"> <h3> <?php the_title(); ?></h3></div>
+   
+                              </div>
+      <div class="container">
+    <div class="col-md-8">
 	<?php while ( have_posts() ) : the_post(); ?>
 
 		<?php get_template_part( 'content', 'page' ); ?>
@@ -23,6 +30,9 @@ get_header(); ?>
 		?>
 
 	<?php endwhile; // end of the loop. ?>
+      
 
 <?php get_sidebar(); ?>
+    </div>
+</div>
 <?php get_footer(); ?>

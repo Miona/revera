@@ -12,7 +12,12 @@
  */
 
 get_header(); ?>
-
+<div class=" head"> 
+    <h3> Blog </h3>
+   
+                              </div>
+<div class="container">
+<div class="col-md-8">
 	<?php if ( have_posts() ) : ?>
 
 		<?php /* Start the Loop */ ?>
@@ -35,6 +40,9 @@ get_header(); ?>
 		<?php get_template_part( 'no-results', 'index' ); ?>
 
 	<?php endif; ?>
-
+    </div>
+<div class="col-md-4">
 <?php get_sidebar(); ?>
+    </div>
+</div>   
 <?php get_footer(); ?>

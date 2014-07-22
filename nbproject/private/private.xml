@@ -4,16 +4,15 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/xampp/htdocs/revera/wp-content/themes/revera/header.php</file>
-            <file>file:/C:/xampp/htdocs/revera/wp-content/themes/revera/flex.css</file>
+            <file>file:/C:/xampp/htdocs/revera/wp-content/themes/revera/footer.php</file>
+            <file>file:/C:/xampp/htdocs/revera/wp-content/themes/revera/single.php</file>
             <file>file:/C:/xampp/htdocs/revera/wp-content/themes/revera/functions.php</file>
+            <file>file:/C:/xampp/htdocs/revera/wp-content/themes/revera/content-frontposts.php</file>
             <file>file:/C:/xampp/htdocs/revera/wp-content/themes/revera/index.php</file>
+            <file>file:/C:/xampp/htdocs/revera/wp-content/themes/revera/includes/customizer.php</file>
             <file>file:/C:/xampp/htdocs/revera/wp-content/themes/revera/sidebar.php</file>
             <file>file:/C:/xampp/htdocs/revera/wp-content/themes/revera/front-page.php</file>
             <file>file:/C:/xampp/htdocs/revera/wp-content/themes/revera/style.css</file>
-            <file>file:/C:/xampp/htdocs/revera/wp-content/themes/revera/includes/resources/bootstrap/css/mixins/newhtml.html</file>
-            <file>file:/C:/xampp/htdocs/revera/wp-content/themes/revera/page.php</file>
-            <file>file:/C:/xampp/htdocs/revera/wp-content/themes/revera/flex.js</file>
-            <file>file:/C:/xampp/htdocs/revera/wp-content/themes/revera/jquery.flexslider.min.js</file>
         </group>
     </open-files>
 </project-private>

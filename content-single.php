@@ -7,7 +7,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="page-header">
 		<h1 class="page-title"><?php the_title(); ?></h1>
-
+                  <?php the_post_thumbnail( 'post_feature_thumb' ); ?> 
 		<div class="entry-meta">
 			<?php revera_posted_on(); ?>
 		</div><!-- .entry-meta -->
