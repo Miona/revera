@@ -66,7 +66,7 @@ function revera_setup() {
 	 * This theme uses wp_nav_menu() in one location.
 	*/
 	register_nav_menus( array(
-		'primary'  => __( 'Header bottom menu', 'revera' ),
+		'primary'  => __( 'Header Menu', 'revera' ),
 	) );
 
 }
@@ -78,7 +78,7 @@ add_action( 'after_setup_theme', 'revera_setup' );
  */
 function revera_widgets_init() {
 	register_sidebar( array(
-		'name'          => __( 'Sidebar-1', 'revera' ),
+		'name'          => __( 'Sidebar', 'revera' ),
 		'id'            => 'home-sidebar-1',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
@@ -86,32 +86,32 @@ function revera_widgets_init() {
 		'after_title'   => '</h3>',
 	) );
         register_sidebar( array(
-		'name'          => __( 'Sidebar-2', 'revera' ),
-		'id'            => 'home-footer-2',
+		'name'          => __( 'Footer #1', 'revera' ),
+		'id'            => 'footer-1',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	) );
          register_sidebar( array(
-		'name'          => __( 'Sidebar-3', 'revera' ),
-		'id'            => 'home-footer-3',
+		'name'          => __( 'Footer #2', 'revera' ),
+		'id'            => 'footer-2',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	) );
           register_sidebar( array(
-		'name'          => __( 'Sidebar-4', 'revera' ),
-		'id'            => 'home-footer-4',
+		'name'          => __( 'Footer #3', 'revera' ),
+		'id'            => 'footer-3',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	) );
            register_sidebar( array(
-		'name'          => __( 'Sidebar-5', 'revera' ),
-		'id'            => 'home-footer-5',
+		'name'          => __( 'Footer #4', 'revera' ),
+		'id'            => 'footer-4',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h3 class="widget-title">',
@@ -126,20 +126,13 @@ add_action( 'widgets_init', 'revera_widgets_init' );
  */
 function revera_scripts() {
            
-	 wp_enqueue_style('load bootstrap css9ootstrap', get_template_directory_uri() . '/includes/resources/bootstrap/css/bootstrap.css' );
+	 wp_enqueue_style('bootstrap', get_template_directory_uri() . '/includes/resources/bootstrap/css/bootstrap.css' );
 
 	// load Revera styles
 	wp_enqueue_style( 'revera-style', get_stylesheet_uri() );
-         wp_enqueue_style( 'flex-style', get_template_directory_uri() .'/flex.css' );
-        
-        
-       
         
         wp_enqueue_script('jquery');
         
-       wp_enqueue_script('flex-js', get_template_directory_uri().'/flex.js' );
-       
-        wp_enqueue_script('flex-jquery', get_template_directory_uri() .'/jquery.flexslider.min.js'  );
 	// load bootstrap js
 	wp_enqueue_script('revera-bootstrapjs', get_template_directory_uri().'/includes/resources/bootstrap/js/bootstrap.js', array('jquery') );
         

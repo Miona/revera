@@ -11,33 +11,29 @@
 		</div><!-- close .row -->
 	</div><!-- close .container -->
 </div><!-- close .main-content -->
-<div class="bottom">
-<div class="container">
-     <div class="row ">
-        
-        
-        <div class="foot col-sm-3 widget_text">
-             <?php dynamic_sidebar( 'home-footer-2' ); ?>
-        </div>
-    
-   
-        <div class="foot col-sm-3 widget_meta">
-            <?php dynamic_sidebar( 'home-footer-3' ); ?>
-        </div>
-         <div class="foot col-sm-3 widget_archive">
-            <?php dynamic_sidebar( 'home-footer-4' ); ?>
-         </div>
-          <div class="foot col-sm-3 widget_recent_entries">  
-      <?php dynamic_sidebar( 'home-footer-5' ); ?>
-          </div>
-        
-         </div>
-  </div>
-</div>   
 
 <footer id="colophon" class="site-footer foot" role="contentinfo">
 	<div class="container">
 		<div class="row">
+                    
+                    
+        <div class="footer-widget col-lg-3 col-md-6 col-sm-12 ">
+             <?php dynamic_sidebar( 'footer-1' ); ?>
+        </div>
+    
+   
+        <div class="footer-widget col-lg-3 col-md-6 col-sm-12">
+            <?php dynamic_sidebar( 'footer-2' ); ?>
+        </div>
+         <div class="footer-widget col-lg-3 col-md-6 col-sm-12">
+            <?php dynamic_sidebar( 'footer-3' ); ?>
+         </div>
+          <div class="footer-widget col-lg-3 col-md-6 col-sm-12">  
+      <?php dynamic_sidebar( 'footer-4' ); ?>
+          </div>
+        
+
+                    
 			<div class="site-footer-inner col-sm-12">
 
 				<div class="site-info">

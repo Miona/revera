@@ -76,8 +76,8 @@ get_header(); ?>
                
                <div class="col-sm-4 homewidget">
                    
-                   <?php if ( get_theme_mod('home_featured_one') !='' ) {  ?>
-                     <div class="featured-image"><img src="<?php echo get_theme_mod('home_featured_one'); ?>" /></div>
+                   <?php if ( get_theme_mod('home_featured_one') ) {  ?>
+                     <span><i class="glyphicon glyphicon-<?php echo get_theme_mod('home_featured_one'); ?>"></i></span>
                     <?php } else {  ?>
                      <span><i class="glyphicon glyphicon-heart"></i></span>
                      <?php } ?>

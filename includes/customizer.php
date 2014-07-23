@@ -157,7 +157,7 @@ function revera_customize_register( $wp_customize ) {
         'priority' => 13,
     )));
         
-         // Add new section for Home Featured One settings
+     // Add new section for Home Featured One settings
     
     //Home featured 1
     $wp_customize->add_section('home_featured_one_setting', array(
@@ -165,25 +165,26 @@ function revera_customize_register( $wp_customize ) {
         'priority' => 40,
     ));
    
+     $wp_customize->add_setting('home_featured_one', array(
+        'sanitize_callback' => 'sanitize_text_field',
+        'transport' => 'postMessage',
+    ));
 
-    $wp_customize->add_setting('home_featured_one');
-
-    $wp_customize->add_control(
-            new WP_Customize_Image_Control(
-            $wp_customize, 'home_featured_one', array(
-        'label' => 'Featured Image',
+    $wp_customize->add_control('home_featured_one', array(
+        'label' => __('Featured Icon', 'revera'),
         'section' => 'home_featured_one_setting',
         'settings' => 'home_featured_one',
         'priority' => 1,
-            )
-            )
-    );
+    ));
+
+   
         // home Title
     $wp_customize->add_setting('home_title_one', array(
         'sanitize_callback' => 'sanitize_text_field',
         'transport' => 'postMessage',
     ));
-
+     
+    
     $wp_customize->add_control('home_title_one', array(
         'label' => __('Title', 'revera'),
         'section' => 'home_featured_one_setting',
@@ -255,20 +256,19 @@ function revera_customize_register( $wp_customize ) {
     ));
 
 
-    $wp_customize->add_setting('home_featured_three');
+    $wp_customize->add_setting('home_featured_three', array(
+        'sanitize_callback' => 'sanitize_text_field',
+        'transport' => 'postMessage',
+    ));
 
-    $wp_customize->add_control(
-            
-            $wp_customize, 'home_featured_three', array(
-        'label' => 'Featured Icon',
+    $wp_customize->add_control('home_featured_three', array(
+        'label' => __('Featured Icon', 'revera'),
         'section' => 'home_featured_three_setting',
         'settings' => 'home_featured_three',
-           'type' => 'text',     
         'priority' => 1,
-            )
-            
-    );
-      // home Title
+    ));
+
+    // home Title
     $wp_customize->add_setting('home_title_three', array(
         'sanitize_callback' => 'sanitize_text_field',
         'transport' => 'postMessage',
@@ -292,6 +292,35 @@ function revera_customize_register( $wp_customize ) {
         'settings' => 'home_description_three',
         'priority' => 3,
     )));
+        // Add blog customisation
+    
+        $wp_customize->add_section('blog_setting', array(
+        'title' => __('Blog', 'revera'),
+        'priority' => 60,
+    ));
+        
+    $wp_customize->add_setting('blog', array(
+        'sanitize_callback' => 'sanitize_text_field',
+        'transport' => 'postMessage',
+    ));
+    
+    $wp_customize->add_control('blog', array(
+        'label' => __('Blog Title', 'revera'),
+        'section' => 'blog_setting',
+        'settings' => 'blog',
+        'priority' => 1,
+    ));
+    $wp_customize->add_setting('blog_tagline', array(
+        'sanitize_callback' => 'sanitize_text_field',
+        'transport' => 'postMessage',
+    ));
+
+    $wp_customize->add_control('blog_tagline', array(
+        'label' => __('Tagline', 'revera'),
+        'section' => 'blog_setting',
+        'settings' => 'blog_tagline',
+        'priority' => 2,
+    ));
          // Add footer text section
     $wp_customize->add_section('revera_footer', array(
         'title' => 'Footer Settings', // The title of section
