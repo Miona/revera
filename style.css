@@ -241,7 +241,24 @@ margin-bottom:20px;
 
 }
 
+.blog-page{
+  background: #ed564b;
+padding: 10px 0px;
+color: #fff;
+border-top: 5px solid #f96b61;
+border-bottom: 5px solid #f96b61;
+margin-bottom:20px;
+text-transform:uppercase;
 
+}
+.blog-page p{
+    font-size:16px;
+}
+.blog-page h3{
+    font-size:24px;
+    font-weight: bold;
+    
+}
 .head h3 {
 font-size: 24px;
 text-transform: uppercase;
@@ -265,6 +282,7 @@ h1 .entry-title a:link {
 color: #000;
 text-decoration:none;
 }
+
 .footer-widget{
     color: #aaa;
 }

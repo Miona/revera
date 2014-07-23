@@ -12,10 +12,18 @@
  */
 
 get_header(); ?>
-<div class=" head"> 
-    <h3> Blog </h3>
-   
+<div class="blog-page"> 
+    <div class="container">
+    <?php if ( get_theme_mod('blog') !='' ) {  ?><h3><?php echo esc_html(get_theme_mod('blog')); ?></h3>
+                  <?php } else {  ?> <h3><a href="#"><?php esc_html_e('Title', 'revera') ?></a></h3>
+                           <?php } ?>
+     <?php if ( get_theme_mod('blog_tagline') !='' ) {  ?>
+                  <p><?php echo esc_html(get_theme_mod('blog_tagline')); ?></p>
+                           <?php } else { ?>
+                          <p><?php esc_html_e('Articles from blog', 'revera') ?> </p>
+                                           <?php } ?>
                               </div>
+</div>
 <div class="container">
 <div class="col-md-8">
 	<?php if ( have_posts() ) : ?>
